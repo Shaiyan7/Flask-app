@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Basics</title>
+</head>
+<body>
+    <h1>Flask Basics</h1>
+    {% for blog in blogs %}
+        <h2>{{ blog['title'] }}</h2>
+        <p><em>Author: {{ blog['author'] }}</em></p>
+        <p>{{ blog['content'] }}</p>
+        <hr>
+    {% endfor %}
+</body>
+</html>
+p
